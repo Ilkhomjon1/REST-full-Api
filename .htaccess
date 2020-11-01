@@ -1,0 +1,20 @@
+php_value max_execution_time 130
+php_value max_input_time 320
+php_value upload_max_filesize 20M
+php_value post_max_size 20M
+php_value memory_limit 128M
+php_value display_errors Off
+
+php_flag opcache.enable Off
+php_value xcache.cacher Off
+php_value xcache.size 0
+php_value xcache.stat Off
+
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+
+
